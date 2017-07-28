@@ -1,0 +1,19 @@
+.wrap {
+    width: auto;
+}
+
+.content {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 150px;
+    font: 16px normal 'Microsoft Yahei';
+    line-height: 150px;
+    text-align: center;
+}
+
+.footer {
+    height: 100px;
+}
