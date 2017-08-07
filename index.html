@@ -8,10 +8,17 @@
 </head>
 
 <body>
+   
     <div class="wrap">
         <div class="content"></div>
+        <div class= "inpbox content">
+             <input id = "inp" type="button" value="隐藏和显示" class = "inpclass">
+        </div>
+       
         <div class="header content">
-            <h2>你好，你正在浏览的网页不存在</h2>
+        
+
+        <h2>你好，你正在浏览的网页不存在</h2>
         </div>
         <div class="section content">
             <p><a href="#">段落1</a></p>
@@ -24,5 +31,11 @@
     </div>
 
 </body>
-
+<script src="js/jQuery/jQuery%203.2.1.js"></script>
+<script>
+    $('#inp').click(function(){
+         $(".header").toggle();
+         $("p").toggle();
+    })
+</script>
 </html>

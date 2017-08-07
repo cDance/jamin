@@ -17,3 +17,11 @@
 .footer {
     height: 100px;
 }
+
+.inpclass{
+    margin-left: 300px;
+    width: 400px;
+    height: 50px;
+    background: #b9b7b7;
+    border: 0;
+}
