@@ -1,2 +1,0 @@
-# jamin
-my first blog

@@ -1,41 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/master.css"/>
-    <title>jamin's blog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>我的博客</title>
 </head>
-
-<body>
-   
-    <div class="wrap">
-        <div class="content"></div>
-        <div class= "inpbox content">
-             <input id = "inp" type="button" value="隐藏和显示" class = "inpclass">
-        </div>
+<style>
+       .div0 {
+             position: relative;
+             height:100px;
+             width:100%;
+             background: green;
+       }
+       .img-wrap{
+             position:absolute;
+             top:10px;
+             left: 10px;
+             float: left;
+             width:80px;
+             height:80px;
+             border-radius:50%;
+             background: yellow;
+       }
+       .head-text{
+             float:left;
+             padding:15px 10px 0px 115px;
+             width: 200px;
+             
+       }
+       .div1 {
+             width:100%;
+             height:200px;
+             background:yellow;
+             overflow:hidden;
+             }
+       .div2 {
+             text-align:center;
+             background: #efefef;
        
-        <div class="header content">
-        
-
-        <h2>你好，你正在浏览的网页不存在</h2>
-        </div>
-        <div class="section content">
-            <p><a href="#">段落1</a></p>
-            <p><a href="#">段落1</a></p>
-            <p><a href="#">段落1</a></p>
-        </div>
-        <div class="footer">
-
-        </div>
+       }
+      p{
+         text-indent:2em;
+      } 
+      .div3{
+           text-align:center;
+      }
+</style>
+<body>
+<div class="div0">
+    <div class="img-wrap">
+       
     </div>
+    <span class="head-text">jamin</span>
+    <span class="head-text">无折腾，不人生</span>
+</div>
+<div class="div1" id="div1">
+     <p>世界这么大，我想去看看，这个话一热，好像兴起了一股辞职热潮。
+在现实生活中，我也不例外，呆在这里已经整整27个月，有过彷徨，有过失落，有过不知所谓，其实做什么不重要，重要的是要做好，如何对这27个月进行总结，如果用一个坐标系来说明我做得怎样，那就是这样:
+</p>
+     <p>诚然，状态起起伏伏，当中因素挺多，诸如待人接物，人情练达。
+这27个月，是大学毕业后重新认识自己一个过程，很庆幸的，我越来越清楚自己以后要干什么，该做什么，当然最重要离不开两字：坚持。</p>
+     <p>相识就是缘分；</p>
+     <p>感恩那些帮助过我；</p>
+     <p>感恩那些帮助过我；</p>
+     <p>感恩你们的包容； </p>
+     <p>感恩你们给予的机会，又是我的挑战；</p>
+     <p>感恩有心人；</p>
+     <p>感恩我敬畏的人；</p>
+     <p>THANKS</p>
+      
+</div>
+   
+<div class="div2" id="btn"> ↓显示全部↓
 
+</div>
+ <p></p>
+     <p></p>
+<div class="div3"><small>Copyright@2018-01-05 BY jamin</small></div>
 </body>
-<script src="js/jQuery/jQuery%203.2.1.js"></script>
 <script>
-    $('#inp').click(function(){
-         $(".header").toggle();
-         $("p").toggle();
-    })
+      var oBtn=document.getElementById("btn");
+      var oDiv=document.getElementById("div1");
+      
+      oBtn.onclick=function(){
+          oDiv.style.minHeight="400px";
+          oBtn.style.display="none";
+      }
 </script>
 </html>
