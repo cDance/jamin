@@ -5,11 +5,12 @@
 <title>我的博客</title>
 </head>
 <style>
+       body { background: #FFF; color: #000; font-size: 16px; font-style: normal; font-family:'Microsoft Yahei','寰蒋闆呴粦','Simsun','瀹嬩綋','Arial', sans-serif;}
        .div0 {
              position: relative;
              height:100px;
              width:100%;
-             background: green;
+             background: #36506C;
        }
        .img-wrap{
              position:absolute;
@@ -18,8 +19,6 @@
              float: left;
              width:80px;
              height:80px;
-             border-radius:50%;
-             background: yellow;
        }
        .head-text{
              float:left;
@@ -29,8 +28,8 @@
        }
        .div1 {
              width:100%;
-             height:200px;
-             background:yellow;
+             height:300px;
+             background:#f0ffd5;
              overflow:hidden;
              }
        .div2 {
@@ -38,25 +37,31 @@
              background: #efefef;
        
        }
+    .pic1{
+        width: 734px;
+        height: 530px;
+    }
       p{
          text-indent:2em;
       } 
       .div3{
+           font-size: 18px;
            text-align:center;
       }
 </style>
 <body>
 <div class="div0">
     <div class="img-wrap">
-       
+       <img  style="width: 80px;height: 80px; border-radius:50%;" src="t1.jpg"/>
     </div>
     <span class="head-text">jamin</span>
     <span class="head-text">无折腾，不人生</span>
 </div>
 <div class="div1" id="div1">
      <p>世界这么大，我想去看看，这个话一热，好像兴起了一股辞职热潮。
-在现实生活中，我也不例外，呆在这里已经整整27个月，有过彷徨，有过失落，有过不知所谓，其实做什么不重要，重要的是要做好，如何对这27个月进行总结，如果用一个坐标系来说明我做得怎样，那就是这样:
+在现实生活中，我也不例外，在这里已经整整27个月，有过彷徨，有过失落，有过不知所谓，其实做什么不重要，重要的是要做好，如何对这27个月进行总结，如果用一个坐标系来说明我做得怎样，那就是这样:
 </p>
+    <div style="width: 734px;height: 530px;"><img class="pic1" src="p1.png"/></div>
      <p>诚然，状态起起伏伏，当中因素挺多，诸如待人接物，人情练达。
 这27个月，是大学毕业后重新认识自己一个过程，很庆幸的，我越来越清楚自己以后要干什么，该做什么，当然最重要离不开两字：坚持。</p>
      <p>相识就是缘分；</p>
@@ -82,7 +87,7 @@
       var oDiv=document.getElementById("div1");
       
       oBtn.onclick=function(){
-          oDiv.style.minHeight="400px";
+          oDiv.style.minHeight="1000px";
           oBtn.style.display="none";
       }
 </script>
